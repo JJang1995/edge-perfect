@@ -49,7 +49,7 @@ document.querySelectorAll('.reveal, .divider').forEach(el => revealObserver.obse
   });
 
   L.marker(home, { icon: goldIcon }).addTo(map)
-    .bindPopup('<strong style="color:#c9a84c">Edge Perfect</strong><br>East Brunswick, NJ');
+    .bindPopup('<strong style="color:#c9a84c">The Sharp Fellas</strong><br>East Brunswick, NJ');
 
   L.circle(home, {
     radius: radiusMeters,

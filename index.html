@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edge Perfect | Professional Knife Sharpening</title>
+  <title>The Sharp Fellas | Professional Knife Sharpening</title>
   <link rel="icon" type="image/png" href="favicon.png.png" sizes="64x64" />
   <link rel="icon" type="image/png" href="favicon.png.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicon.png.png" sizes="16x16" />
@@ -16,12 +16,12 @@
 
   <!-- NAV -->
   <nav>
-    <div class="logo">
+    <a href="#" class="logo" style="text-decoration:none;">
       <div class="logo-circle">
-        <img src="nav_icon.png.png" alt="Edge Perfect" class="logo-img" />
+        <img src="nav_icon.png.png" alt="The Sharp Fellas" class="logo-img" />
       </div>
-      <span>Edge Perfect</span>
-    </div>
+      <span>The Sharp Fellas</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#process">Process</a></li>
       <li><a href="#testimonials">Reviews</a></li>
@@ -39,7 +39,7 @@
       <div class="hero-cards">
         <div class="hero-price">
           <strong>$8</strong>
-          <span>Per Knife, Any Size<br><em>No per-inch nonsense</em></span>
+          <span>Per Knife<br><em>No per-inch nonsense</em></span>
         </div>
         <div class="hero-price">
           <strong>🚗</strong>
@@ -133,7 +133,7 @@
       </div>
       <div class="testimonial reveal reveal-delay-2">
         <div class="stars">★★★★★</div>
-        <p>We use Edge Perfect for our entire restaurant kitchen. Quick turnaround, consistent results. Our line cooks notice the difference immediately.</p>
+        <p>We use The Sharp Fellas for our entire restaurant kitchen. Quick turnaround, consistent results. Our line cooks notice the difference immediately.</p>
         <div class="author">Sarah K.</div>
         <div class="role">Executive Chef, The Granary</div>
       </div>
@@ -177,11 +177,12 @@
       <div class="contact-info reveal from-left">
         <h3>Find Us</h3>
         <p>📍 <span><strong>1403 Commons Dr</strong><br>East Brunswick, NJ 08816</span></p>
-        <p>📞 <span><strong>(732) 354-9388</strong></span></p>
-        <p>✉️ <span><strong>hello@edgeperfect.com</strong></span></p>
-        <p>🕐 <span><strong>Mon–Fri:</strong> 9am – 6pm<br><strong>Sat:</strong> 10am – 4pm<br><strong>Sun:</strong> Closed</span></p>
+        <p>📞 <span><strong>732-354-9388</strong></span></p>
+        <p>✉️ <span><strong>thesharpfellas@gmail.com</strong></span></p>
+        <p>🕐 <span><strong>Mon–Sun:</strong> 9am – 6pm</span></p>
       </div>
-      <form onsubmit="handleSubmit(event)" class="reveal from-right reveal-delay-1">
+      <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)" class="reveal from-right reveal-delay-1">
+        <input type="hidden" name="form-name" value="contact" />
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Email Address" required />
         <input type="tel" placeholder="Phone Number" />
@@ -193,8 +194,8 @@
 
   <!-- FOOTER -->
   <footer>
-    <span class="logo">Edge Perfect</span>
-    <p>© 2026 Edge Perfect Knife Sharpening. All rights reserved.</p>
+    <span class="logo">The Sharp Fellas</span>
+    <p>© 2026 The Sharp Fellas Knife Sharpening. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

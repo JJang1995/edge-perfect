@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(explorer \"c:\\\\Users\\\\seonj\\\\knife-sharpening\")",
+      "Bash(explorer.exe \"c:\\\\Users\\\\seonj\\\\knife-sharpening\")",
+      "WebSearch",
+      "WebFetch(domain:giphy.com)",
+      "Bash(curl -L -o \"c:/Users/seonj/knife-sharpening/hero.gif\" \"https://media.giphy.com/media/aHFgDHucMrnPrXOQYl/giphy.gif\")",
+      "Bash(start \"c:\\\\Users\\\\seonj\\\\knife-sharpening\\\\character.svg\")",
+      "Bash(git --version)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(gh repo *)",
+      "Bash(git push *)"
+    ]
+  }
+}

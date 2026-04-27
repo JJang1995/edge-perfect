@@ -5,33 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Sharp Fellas | Professional Knife Sharpening</title>
   <meta name="description" content="Professional knife sharpening in East Brunswick, NJ. $8 flat per knife, any size. Drop off or we pick up. Serving within 10 miles. Call 732-354-9388." />
-  <link rel="icon" type="image/png" href="favicon.png.png" sizes="64x64" />
-  <link rel="icon" type="image/png" href="favicon.png.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon.png.png" sizes="16x16" />
-  <link rel="apple-touch-icon" href="favicon.png.png" sizes="180x180" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png.png" sizes="64x64" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png.png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png.png" sizes="180x180" />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://c.basemaps.cartocdn.com" />
   <link rel="preconnect" href="https://media.giphy.com" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
-    <a href="index.html" class="logo" style="text-decoration:none;">
+    <a href="#" class="logo" style="text-decoration:none;">
       <div class="logo-circle">
-        <img src="nav_icon.png.png" alt="The Sharp Fellas" class="logo-img" />
+        <img src="assets/img/nav_icon.png.png" alt="The Sharp Fellas" class="logo-img" />
       </div>
       <span>The Sharp Fellas</span>
     </a>
     <ul class="nav-links">
-      <li><a href="pages/about.html">Why Us</a></li>
-      <li><a href="pages/process.html">Process</a></li>
-      <li><a href="pages/testimonials.html">Reviews</a></li>
-      <li><a href="pages/service-area.html">Service Area</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
+      <li><a href="#about">Why Us</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#service-area">Service Area</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
@@ -49,7 +54,7 @@
         </div>
       </div>
       <div class="hero-btns">
-        <a href="pages/contact.html" class="btn">Book a Sharpening</a>
+        <a href="#contact" class="btn">Book a Sharpening</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -58,6 +63,141 @@
       </div>
     </div>
   </section>
+
+  <!-- WHY US -->
+  <section class="features" id="about">
+    <p class="section-label reveal">Why Choose Us</p>
+    <h2 class="section-title reveal">The Sharpest Standard</h2>
+    <div class="divider"></div>
+    <p class="section-sub reveal">We treat every blade like a fine instrument. Because that's exactly what it is.</p>
+    <div class="features-grid">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">⚙️</div>
+        <h3>Precision Technique</h3>
+        <p>Hand-sharpened on Japanese water stones with exact angle control for your specific blade geometry.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">💲</div>
+        <h3>Flat Rate, Any Size</h3>
+        <p>Most sharpeners charge per inch, making pricing confusing and unpredictable. We charge $8 per knife, period. Paring knife or cleaver, the price never changes.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">⚡</div>
+        <h3>Fast Turnaround</h3>
+        <p>Most knives ready same day or next day. Rush service available for professional kitchens.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-4">
+        <div class="feature-icon">🛡️</div>
+        <h3>Satisfaction Guaranteed</h3>
+        <p>Not happy with the edge? We'll re-sharpen it free of charge. No questions asked.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <p class="section-label reveal">How It Works</p>
+    <h2 class="section-title reveal">Simple Process, Perfect Results</h2>
+    <div class="divider"></div>
+    <p class="section-sub reveal">Getting your knives sharpened has never been easier.</p>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num">01</div>
+        <h3>Drop Off or We Pick Up</h3>
+        <p>Bring your knives to us, or we'll come to your location. Whatever is most convenient for you.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num">02</div>
+        <h3>Inspection</h3>
+        <p>We assess each blade, identify damage, and select the right sharpening approach.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-num">03</div>
+        <h3>Sharpening</h3>
+        <p>Hand-sharpened on premium whetstones. Each blade finished and honed to a razor edge.</p>
+      </div>
+      <div class="step reveal reveal-delay-4">
+        <div class="step-num">04</div>
+        <h3>Return</h3>
+        <p>Pick up your knives from us or we'll drop them back off at your door. Razor sharp and ready to use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <p class="section-label reveal">Reviews</p>
+    <h2 class="section-title reveal">What Customers Say</h2>
+    <div class="divider"></div>
+    <p class="section-sub reveal">From home cooks to professional chefs. Everyone deserves a sharp knife.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal from-left reveal-delay-1">
+        <div class="stars">★★★★★</div>
+        <p>My chef's knives have never been sharper. I've tried electric sharpeners and they're nothing compared to this. Worth every penny.</p>
+        <div class="author">Marcus T.</div>
+        <div class="role">Home Chef</div>
+      </div>
+      <div class="testimonial reveal reveal-delay-2">
+        <div class="stars">★★★★★</div>
+        <p>We use The Sharp Fellas for our entire restaurant kitchen. Quick turnaround, consistent results. Our line cooks notice the difference immediately.</p>
+        <div class="author">Sarah K.</div>
+        <div class="role">Executive Chef, The Granary</div>
+      </div>
+      <div class="testimonial reveal from-right reveal-delay-3">
+        <div class="stars">★★★★★</div>
+        <p>Brought in a hunting knife that was practically a butter knife. Got it back sharper than the day I bought it. Incredible work.</p>
+        <div class="author">Dave R.</div>
+        <div class="role">Outdoorsman</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA MAP -->
+  <section class="service-area" id="service-area">
+    <p class="section-label reveal">Service Area</p>
+    <h2 class="section-title reveal">We Come To You</h2>
+    <div class="divider"></div>
+    <p class="section-sub reveal">Based in East Brunswick, NJ. Serving customers within a 10-mile radius.</p>
+    <div class="map-wrapper reveal">
+      <div id="service-map"></div>
+      <div class="map-legend">
+        <div class="legend-item">
+          <span class="legend-marker"></span>
+          <span>East Brunswick, NJ</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-circle"></span>
+          <span>10-Mile Service Radius</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="section-label reveal">Get in Touch</p>
+    <h2 class="section-title reveal">Book a Sharpening</h2>
+    <div class="divider"></div>
+    <p class="section-sub reveal">Drop a message and we'll get back to you within a few hours.</p>
+    <div class="contact-wrap">
+      <div class="contact-info reveal from-left">
+        <h3>Find Us</h3>
+        <p>📍 <span><strong>1403 Commons Dr</strong><br>East Brunswick, NJ 08816</span></p>
+        <p>📞 <span><strong>732-354-9388</strong></span></p>
+        <p>✉️ <span><strong>thesharpfellas@gmail.com</strong></span></p>
+        <p>🕐 <span><strong>Mon–Sun:</strong> 9am – 6pm</span></p>
+      </div>
+      <form name="contact" method="POST" data-netlify="true" class="reveal from-right reveal-delay-1">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" />
+        <textarea name="message" placeholder="Tell us about your knives: how many, what type, any damage?"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -66,7 +206,7 @@
     <p>© 2026 The Sharp Fellas Knife Sharpening. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/script.js" defer></script>
 
 </body>
 </html>
